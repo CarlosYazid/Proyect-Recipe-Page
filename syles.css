@@ -1,0 +1,606 @@
+/* Mobile First*/
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@property --nutmeg {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsl(14, 45%, 36%);
+}
+
+@property --dark-raspberry {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsl(332, 51%, 32%);
+}
+
+@property --rose-white {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsl(330, 100%, 98%);
+}
+
+@property --eggshell {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsl(30, 54%, 90%);
+}
+
+@property --light-grey {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsl(30, 18%, 87%);
+}
+
+@property --wenge-brown {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsl(30, 10%, 34%);
+}
+
+@property --dark-charcoal {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsl(24, 5%, 18%);
+}
+
+
+:root {
+    /* Colores */
+
+        /*Primarios*/
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+        /*Secundarios*/
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* Tipografía */
+    --font-titles: 'Young Serif', serif;
+    --font-text: 'Outfit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    p {
+        font-size: 16px;
+    }
+}
+
+body {
+    width: 100%;
+    height: 2250px;
+    overflow: scroll;
+
+    .page {
+        width: 100%;
+        height: 95%;
+        background-color: var(--eggshell);
+
+        section {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            gap: 1% 0;
+
+            background-color: white;
+
+            hr {
+                width: 100%;
+                color: rgb(3 3 3 / 0.07);
+            }
+
+            h3 {
+                width: 100%;
+                height: 20%;
+                padding: 0;
+
+                font-family: var(--font-titles);
+                font-size: 2rem;
+                letter-spacing: 0.02rem;
+                font-weight: 500;
+                text-align: left;
+                color: var(--nutmeg);
+            }
+
+            p {
+                color: var(--wenge-brown);
+                font-family: var(--font-text);
+                font-size: 1.04rem;
+                letter-spacing: 0.03rem;
+                font-weight: 400;
+            }
+            
+
+            .image_ {
+                width: 100%;
+                height: 8.5%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .sections {
+                width: 100%;
+                padding: 0 7.5%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+
+
+            .intro_ {
+                width: 100%;
+                height: 25%;
+                padding: 0 2%;
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: start;
+                align-items: center;
+                gap: 6% 0;
+
+                h1 {
+                    width: 100%;
+                    height: 18%;
+                    padding: 0 3%;
+
+                    font-family: var(--font-titles);
+                    font-size: 2.2rem;
+                    letter-spacing: 0.04rem;
+                    font-weight: 700;
+                }
+
+                .description_basic {
+                    width: 100%;
+                    height: 21.5%;
+                    padding: 0 4%;
+
+                    color: var(--wenge-brown);
+                    font-family: var(--font-text);
+                    font-size: 1.04rem;
+                    letter-spacing: 0.03rem;
+                    font-weight: 400;
+                }
+
+                .items_preparation {
+
+                    width: 87.5%;
+                    height: 45%;
+                    padding: 7% 12%;
+
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    align-items: start;
+
+                    border-radius: 10px;
+                    background-color: var(--rose-white);
+
+                    h5 {
+                        width: 100%;
+                        height: 20%;
+                        padding: 0;
+
+                        font-family: var(--font-text);
+                        font-size: 1.3rem;
+                        letter-spacing: 0.03rem;
+                        font-weight: 600;
+                        text-align: left;
+                        color: var(--dark-raspberry)
+                    }
+
+                    ul {
+                        width: 100%;
+                        height: 80%;
+
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+
+
+                        .item_ {
+                            width: 100%;
+                            height: 22%;
+                            padding: 0;
+
+                            font-family: var(--font-text);
+                            font-size: 1.03rem;
+                            letter-spacing: 0.01rem;
+                            font-weight: 400;
+                            text-align: left;
+                            color: var(--wenge-brown);
+
+
+
+                            p {
+                                margin-left: 15px;
+
+                                b {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+
+                        .item_::marker {
+                            color: var(--dark-raspberry);
+                            font-weight: 200;
+                        }
+                        
+                        #ground {
+                            height: 37%;
+                        }
+                    }
+                }
+            }
+
+            .ingredients_ {
+
+                height: 12.5%;
+
+                flex-wrap: wrap;
+                gap: 5% 0;
+
+                h3 {
+
+                    height: 18%;
+
+                }
+
+                ul {
+                    width: 100%;
+                    height: 71%;
+                    padding: 0 5%;
+
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    li p {
+                        margin-left: 15px;
+                    }
+
+                    li::marker {
+                        color: var(--nutmeg);
+                        font-weight: 200;
+                    }
+
+                }
+            }
+
+            .instructions {
+
+                height: 31%;
+
+                flex-wrap: nowrap;
+                gap: 3% 0;
+
+                h3 {
+                    height: 7.5%;
+                }
+
+                ol {
+                    width: 100%;
+                    height: 90%;
+                    padding: 0 5%;
+
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    li p {
+                        margin-left: 12px;
+                    }
+
+                    li::marker {
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 1rem;
+                        color: var(--nutmeg);
+                        font-weight: 600;
+                    }
+
+                }
+            }
+
+            .nutrition {
+                height: 16.5%;
+
+                flex-wrap: wrap;
+                gap: 5% 0;
+
+                h3 {
+                    height: 10%;
+                }
+
+                ul {
+                    width: 100%;
+                    height: 62%;
+
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    gap: 1% 0;
+
+                    li {
+                        width: 100%;
+                        height: 23%;
+                        padding: 0 5%;
+
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        list-style: none;
+
+                        hr {
+                            width: 100%;
+                            height: 1px;
+                            color: rgb(3 3 3 / 0.07);
+                        }
+
+                        p {
+                            margin-left: 15px;
+
+                            b {
+                                color: var(--nutmeg);
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+
+        }
+    }
+
+    footer {
+        height: 2.7%;
+        margin-top: 10%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        
+        font-family: var(--font-text);
+
+        position: relative;
+        bottom: 0;
+         
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1981px) {
+    body {
+        .page {
+
+            height: 99%;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            section {
+                width: 45%;
+                height: 95%;
+
+                border-radius: 40px;
+                justify-content: space-evenly;
+                gap: 0;
+
+                .image_ {
+                    width: 85%;
+                    height: 13%;
+
+                    border-radius: 20px;
+
+                    img {
+                        border-radius: 20px;
+                    }
+                }
+
+                .intro_ {
+
+                    height: 20%;
+
+                    gap: 1% 0;
+
+                    .items_preparation {
+
+                        height: 55%;
+                        padding: 5% 7.5%;
+
+                        ul #ground {
+                            height: 22%;
+                        }
+                    }
+                }
+
+                .ingredients_ {
+
+                    height: 15%;
+                    gap: 3% 0;
+
+                    .list_item {
+                        height: 75%;
+                    }
+                }
+
+                .instructions {
+                    height: 24%;
+
+                    gap: 5% 0;
+
+                    ol {
+
+                        justify-content: start;
+                        gap: 4.5% 0;
+                    }
+                }
+
+            }
+        }
+
+        footer {
+
+            height: 1%;
+            margin-top: 0;
+        }
+    } 
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    body {
+        .page {
+            section {
+                width: 60%;
+
+            }
+
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1034px) {
+
+    body {
+        .page {
+
+            section {
+
+                justify-content: space-around;
+
+                .intro_ {
+                    gap: 5% 0;
+
+                    h1 {
+                        height: 13.5%;
+                    }
+
+                }
+
+                .ingredients_ {
+
+                    justify-content: space-between;
+
+                    .list_item {
+                        gap: 2% 0;
+                    }
+                }
+
+                .instructions {
+                    height: 25.5%;
+
+                    ol {
+
+                        gap: 3% 0;
+                        flex-wrap: wrap;
+                    }
+                }
+
+            }
+        }
+
+        footer {
+
+            justify-self: center;
+            align-items: center;
+        }
+    }
+} 
+
+@media (min-width: 769px) and (max-width: 922px)  {
+    body {
+        .page {
+
+            section {
+
+                .intro_ {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+
+                .instructions {
+                    height: 27.5%;
+
+                    ol {
+                        gap: 3.25% 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 796px) {
+    body {
+        .page {
+
+            section {
+                .instructions {
+                    ol {
+                        gap: 2.6% 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 771px) {
+    body {
+        .page {
+
+            section {
+
+                .instructions {
+                    ol {
+                        gap: 1.7% 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
